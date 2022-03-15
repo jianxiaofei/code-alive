@@ -1,0 +1,29 @@
+.ant-tags-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0 12px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  .tags-content-wrap {
+    display: flex;
+    width: calc(100% - 100px);
+    overflow-x: auto;
+    .nav-tag {
+      position: relative;
+      min-width: 50px;
+      max-width: 100px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      .ant-tag-close-icon {
+        position: absolute;
+        right: 0;
+        top: 30%;
+      }
+    }
+  }
+  .ant-dropdown-trigger {
+    cursor: pointer;
+    color: #1da57a;
+  }
+}

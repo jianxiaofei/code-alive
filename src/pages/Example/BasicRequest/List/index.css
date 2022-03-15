@@ -1,0 +1,25 @@
+.list-wrap{
+  margin-top: 50px;
+  padding: 6px;
+}
+.result-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.result-list li{
+  width: 25%;
+  height: 130px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.user-avatar{
+  width: 100px;
+  height: 100px;
+}
+.user-name{
+  text-align: center;
+}

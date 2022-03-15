@@ -1,0 +1,10 @@
+.list-wrap {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  list-style: none;
+  line-height: 2;
+  font-family: cursive;
+}
+
+

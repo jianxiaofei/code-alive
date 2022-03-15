@@ -1,0 +1,19 @@
+.search-wrap {
+  padding: 25px 10px;
+  background-color: #ddd;
+}
+
+.search-inner{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-wrap input {
+  width: 200px;
+  height: 30px;
+  margin-right: 10px;
+}
+.search-wrap button {
+  height: 36px;
+}
