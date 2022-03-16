@@ -1,8 +1,20 @@
 .ant-layout-sider {
   height: 100%;
   overflow-y: scroll;
+  background-color: transparent;
+  background-image: url('http://www.datatom.com/cn/images/banner10.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   .logo {
     height: 32px;
     margin: 16px;
+  }
+  .ant-menu {
+    height: calc(100% - 66px);
+    overflow-y: auto;
+    background-color: rgba(1, 1, 1, 0.25);
+    .ant-menu-inline.ant-menu-sub {
+      background-color: rgba(1, 1, 1, 0.25);
+    }
   }
 }

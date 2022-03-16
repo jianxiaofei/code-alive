@@ -7,7 +7,7 @@ export default function content() {
   return (
     <>
       <NavTag />
-      <AppRoute />
+      <div style={{padding:'6px'}}><AppRoute /></div>
     </>
   )
 }

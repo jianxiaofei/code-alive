@@ -18,7 +18,7 @@ export default function LayoutHeader() {
         {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
           { className: 'menu-collapsed', onClick: toggle }
         )}
-        <h2 className='site-title'>React 技术管理系统</h2>
+        <h2 className='site-title'>程序生涯技术博客</h2>
       </div>
       <div className='user-wrap'>
         <div>

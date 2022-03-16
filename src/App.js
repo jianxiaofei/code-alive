@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Layout>
       <Sider />
-      <Layout>
+      <Layout className="site-main">
         <Layout.Header children={<Header />} />
         <Layout.Content children={<Content />} />
         <Layout.Footer children={<Footer />} />
