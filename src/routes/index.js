@@ -8,7 +8,8 @@ import TodoList from '../pages/Example/TodoLlist';
 import Cart from '../pages/Example/Cart';
 import BasicRequest from '../pages/Example/BasicRequest';
 import Tabs from '../pages/Example/Tabs';
-import Iframe from '../pages/Iframe';
+import WebGame from '../pages/Example/WebGame';
+import Hurdle from '../pages/Example/WebGame/Hurdle';
 
 export default function AppRoute() {
   return useRoutes([
@@ -18,9 +19,9 @@ export default function AppRoute() {
     { path: 'tabs', element: <Tabs /> },
     { path: 'table', element: <Table /> },
     { path: 'todo-list', element: <TodoList /> },
-    { path: 'iframe', element: <Iframe /> },
     { path: 'cart', element: <Cart /> },
     { path: 'basic-request', element: <BasicRequest /> },
+    { path: 'web-game', element: <WebGame />, children: [{ path: 'hurdle', element: <Hurdle /> }] },
     { path: '*', element: <NoMatch /> },
   ]);
 }
