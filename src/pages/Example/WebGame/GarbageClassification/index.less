@@ -1,0 +1,59 @@
+.game-page-root {
+  width: 1280px;
+  height: 720px;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: url('./img/bg.png');
+  .top-wrap {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      .ant-btn {
+        width: 160px;
+        height: 72px;
+        border: none;
+      }
+    }
+  }
+  .game-btn-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 100px 0 100px;
+    > .ant-btn {
+      width: 200px;
+      height: 200px;
+      border: none;
+    }
+  }
+  .video-btn-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    > .ant-btn {
+      width: 240px;
+      height: 160px;
+      border: none;
+    }
+  }
+}
+.classification-modal {
+  .ant-modal-body {
+    height: 666px;
+    background: url('./img/classification_bg.png') no-repeat 100% 100%;
+    background-position: center;
+    .ant-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      img {
+        width: 66%;
+      }
+    }
+    .ant-space {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+}

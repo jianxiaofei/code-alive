@@ -9,9 +9,10 @@ export default class Home extends Component {
       const response = await fetch(`https://api.github.com/repos/jianxiaofei/code-alive/commits`);
       const list = await response.json();
 
-      this.setState({ list });
+      if (list && list.length) this.setState({ list });
     } catch (error) {
-      this.setState({ isLoading: false, isError: true, error: error.message });
+      // this.setState({ isLoading: false, isError: true, error: error.message });
+      console.log(error);
     }
   };
   componentDidMount() {
@@ -19,6 +20,7 @@ export default class Home extends Component {
   }
   render() {
     const { list = [] } = this.state;
+    
     return (
       <>
         <h5 style={{ textAlign: 'center', paddingTop: '30px', marginBottom: '20px' }}>

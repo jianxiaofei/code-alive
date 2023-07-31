@@ -10,6 +10,7 @@ import BasicRequest from '../pages/Example/BasicRequest';
 import Tabs from '../pages/Example/Tabs';
 import WebGame from '../pages/Example/WebGame';
 import Hurdle from '../pages/Example/WebGame/Hurdle';
+import GarbageClassification from '../pages/Example/WebGame/GarbageClassification';
 
 export default function AppRoute() {
   return useRoutes([
@@ -21,7 +22,10 @@ export default function AppRoute() {
     { path: 'todo-list', element: <TodoList /> },
     { path: 'cart', element: <Cart /> },
     { path: 'basic-request', element: <BasicRequest /> },
-    { path: 'web-game', element: <WebGame />, children: [{ path: 'hurdle', element: <Hurdle /> }] },
+    { path: 'web-game', element: <WebGame />, children: [
+      { path: 'hurdle', element: <Hurdle /> },
+      { path: 'garbageClassification', element: <GarbageClassification /> },
+    ] },
     { path: '*', element: <NoMatch /> },
   ]);
 }

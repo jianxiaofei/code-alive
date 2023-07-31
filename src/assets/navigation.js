@@ -10,7 +10,7 @@ import {
   WalletOutlined,
 } from '@ant-design/icons';
 
-// 模拟菜单数据
+// 菜单数据
 export default (function () {
   return [
     { key: '0', title: 'home', url: 'home', icon: <HomeOutlined />, children: [] },
@@ -21,7 +21,10 @@ export default (function () {
       key: 'games',
       title: 'web游戏',
       icon: <WalletOutlined />,
-      children: [{ key: '3-1', title: '🏃跨栏', url: 'web-game/hurdle', icon: <ChromeOutlined />, children: [] }],
+      children: [
+        { key: '3-1', title: '🏃跨栏', url: 'web-game/hurdle', icon: <ChromeOutlined />, children: [] },
+        { key: '3-2', title: '垃圾分类', url: 'web-game/garbageClassification', icon: <ChromeOutlined />, children: [] },
+      ],
     },
     { key: '4', title: '购物车案例', url: 'cart', icon: <CarOutlined />, children: [] },
     { key: '5', title: 'github基础数据请求', url: 'basic-request', icon: <PullRequestOutlined />, children: [] },
